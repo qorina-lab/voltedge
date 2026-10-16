@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VoltEdge Battery Pack (Gen-3) – VoltEdge</title>
+    <meta name="description" content="VoltEdge Battery Pack Gen-3: 800V modular battery architecture with liquid cooling, IP68 protection and 3,000+ cycle life.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner">
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <symbol id="bolt" viewBox="0 0 24 24">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+            </symbol>
+            <symbol id="leaf" viewBox="0 0 24 24">
+                <path d="M5 19C5 10 10 5 20 5c0 10-5 15-14 15M5 19c3-5 6-8 10-10" />
+            </symbol>
+            <symbol id="shield" viewBox="0 0 24 24">
+                <path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z" />
+            </symbol>
+            <symbol id="db" viewBox="0 0 24 24">
+                <path d="M4 6c0-2 16-2 16 0s-16 2-16 0v6c0 2 16 2 16 0V6M4 12v6c0 2 16 2 16 0v-6" />
+            </symbol>
+            <symbol id="target" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8" />
+                <circle cx="12" cy="12" r="3" />
+            </symbol>
+            <symbol id="arr" viewBox="0 0 24 24">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+            </symbol>
+            <symbol id="pin" viewBox="0 0 24 24">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+            </symbol>
+            <symbol id="mail" viewBox="0 0 24 24">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </symbol>
+            <symbol id="phone" viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </symbol>
+            <symbol id="clock" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+            </symbol>
+            <symbol id="linkedin" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+            </symbol>
+            <symbol id="instagram" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <path d="M17.5 6.5h.01" />
+            </symbol>
+            <symbol id="youtube" viewBox="0 0 24 24">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                <path d="m10 15 5-3-5-3z" />
+            </symbol>
+            <symbol id="cpu" viewBox="0 0 24 24">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" />
+            </symbol>
+            <symbol id="drop" viewBox="0 0 24 24">
+                <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+            </symbol>
+            <symbol id="layers" viewBox="0 0 24 24">
+                <path d="m12 2 10 5-10 5L2 7z" />
+                <path d="m2 17 10 5 10-5" />
+                <path d="m2 12 10 5 10-5" />
+            </symbol>
+            <symbol id="trend" viewBox="0 0 24 24">
+                <path d="M22 7l-8.5 8.5-5-5L2 17" />
+                <path d="M16 7h6v6" />
+            </symbol>
+            <symbol id="timer" viewBox="0 0 24 24">
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2 2M9 2h6" />
+            </symbol>
+            <symbol id="shieldc" viewBox="0 0 24 24">
+                <path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z" />
+                <path d="m9 12 2 2 4-4" />
+            </symbol>
+            <symbol id="check" viewBox="0 0 24 24">
+                <path d="m5 12 5 5 9-10" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <header class="solid">
+        <div class="container nav">
+            <a class="logo" href="index.html">
+                <img class="l1" src="images/logo.png" alt="VoltEdge – Clean Energy. Better Tomorrows.">
+                <img class="l2" src="images/logo-light.png" alt="">
+            </a>
+            <button class="menu" aria-label="Menu">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#why">Why Us</a></li>
+                <li><a href="product.html" class="on">Products</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="m-cta"><a class="btn" href="index.html#contact">Contact Sales</a></li>
+            </ul>
+            <a class="btn" href="index.html#contact">Contact Sales <svg class="i"><use href="#arr" /></svg></a>
+        </div>
+    </header>
+
+    <section class="container phero">
+        <div>
+            <span class="tag">COMMERCIAL &amp; PASSENGER EV SOLUTION</span>
+            <h1 class="s2">VoltEdge Battery Pack <span class="g">(Gen-3)</span></h1>
+            <p class="lead" style="margin-top:16px">High-density modular battery architecture engineered for maximum efficiency, ultra-fast charging, and zero compromise on thermal safety.</p>
+            <div class="pstats">
+                <div class="pstat"><strong>800V</strong><span>High Voltage Architecture</span></div>
+                <div class="pstat"><strong>3,000+</strong><span>Estimated Cycle Life</span></div>
+                <div class="pstat"><strong>IP68</strong><span>Water &amp; Dust Ingress Protection</span></div>
+            </div>
+            <div class="btns">
+                <a class="btn" href="index.html#contact" data-purpose="Request technical datasheet">Request Technical Datasheet <svg class="i"><use href="#arr" /></svg></a>
+            </div>
+        </div>
+        <img src="images/product.jpg" alt="VoltEdge Battery Pack Gen-3, isometric view">
+    </section>
+
+    <section class="psec">
+        <div class="container">
+            <div class="sec-h">
+                <span class="tag">Product Overview</span>
+                <h2>Engineered for Versatile Fleet &amp; Vehicle Integration</h2>
+                <p>Our flexible Cell-to-Pack (CTP) architecture removes intermediate module housings, so the pack can be adapted to a wide range of EV chassis without sacrificing energy density.</p>
+            </div>
+            <div class="apps">
+                <article class="app">
+                    <div class="im" style="--img:url(images/tile-car.jpg)" role="img" aria-label="Passenger EVs"></div>
+                    <div class="b">
+                        <b>Passenger EVs</b>
+                        <p>Optimal for high-performance electric SUVs and sedans.</p>
+                    </div>
+                </article>
+                <article class="app">
+                    <div class="im" style="--img:url(images/cta-bg.jpg)" role="img" aria-label="Commercial Fleets"></div>
+                    <div class="b">
+                        <b>Commercial Fleets</b>
+                        <p>Designed for light trucks, delivery vans, and urban logistics.</p>
+                    </div>
+                </article>
+                <article class="app">
+                    <div class="im" style="--img:url(images/tile-road.jpg)" role="img" aria-label="Public Transit"></div>
+                    <div class="b">
+                        <b>Public Transit</b>
+                        <p>Reliable for city electric buses with long daily operating hours.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="psec alt">
+        <div class="container">
+            <div class="sec-h">
+                <span class="tag">Key Engineering Features</span>
+                <h2>What Sets VoltEdge Apart</h2>
+                <p>Four core technologies that make the Gen-3 pack stronger than a standard battery.</p>
+            </div>
+            <div class="f4">
+                <div class="fcard">
+                    <span class="ico"><svg class="i"><use href="#cpu" /></svg></span>
+                    <b>Smart BMS Integration</b>
+                    <p>Real-time monitoring of cell voltage, temperature, and current to prevent early degradation.</p>
+                </div>
+                <div class="fcard">
+                    <span class="ico"><svg class="i"><use href="#drop" /></svg></span>
+                    <b>Advanced Liquid Cooling System</b>
+                    <p>Integrated liquid cooling channels keep temperatures ideal during fast charging.</p>
+                </div>
+                <div class="fcard">
+                    <span class="ico"><svg class="i"><use href="#shield" /></svg></span>
+                    <b>Crash-Resistant Enclosure</b>
+                    <p>High-grade aluminium shell that withstands severe physical impact.</p>
+                </div>
+                <div class="fcard">
+                    <span class="ico"><svg class="i"><use href="#layers" /></svg></span>
+                    <b>Plug-and-Play Scalability</b>
+                    <p>Add or remove battery modules to match the driving range you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="psec">
+        <div class="container">
+            <div class="sec-h">
+                <span class="tag">Technical Specifications</span>
+                <h2>Built on Data You Can Verify</h2>
+            </div>
+            <div class="tbl">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category / Parameter</th>
+                            <th scope="col">Technical Specification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cell Chemistry</td>
+                            <td>Advanced Lithium Nickel Manganese Cobalt (NCM) / LFP Option</td>
+                        </tr>
+                        <tr>
+                            <td>Nominal Voltage</td>
+                            <td>400V / 800V High-Voltage System Architecture</td>
+                        </tr>
+                        <tr>
+                            <td>Energy Capacity</td>
+                            <td>60 kWh – 150 kWh (Scalable Modular Configuration)</td>
+                        </tr>
+                        <tr>
+                            <td>Peak Power Output</td>
+                            <td>Up to 350 kW</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time (DC Fast)</td>
+                            <td>10% to 80% in ~18 minutes (Under optimal conditions)</td>
+                        </tr>
+                        <tr>
+                            <td>Operating Temperature</td>
+                            <td>-30°C to +60°C (-22°F to +140°F)</td>
+                        </tr>
+                        <tr>
+                            <td>Ingress Protection</td>
+                            <td>IP68 / IP69K Waterproof &amp; Dustproof</td>
+                        </tr>
+                        <tr>
+                            <td>Cooling Method</td>
+                            <td>Active Liquid Cooling with Intelligent Thermal Management</td>
+                        </tr>
+                        <tr>
+                            <td>Cycle Life</td>
+                            <td>&gt; 3,000 charge cycles to 80% Health (SOH)</td>
+                        </tr>
+                        <tr>
+                            <td>Safety Certifications</td>
+                            <td>ISO 26262, UN 38.3, IEC 62660 Compliance Ready</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">All values are conceptual placeholders for design demonstration.</p>
+        </div>
+    </section>
+
+    <section class="band">
+        <div class="container">
+            <div class="sec-h">
+                <span class="tag">Operational Benefits</span>
+                <h2>Technical Strength, Business Impact</h2>
+            </div>
+            <div class="bens">
+                <div class="ben">
+                    <span class="ico"><svg class="i"><use href="#trend" /></svg></span>
+                    <b>Lower Total Cost of Ownership (TCO)</b>
+                    <p>Long cell durability reduces battery replacement costs across your fleet.</p>
+                </div>
+                <div class="ben">
+                    <span class="ico"><svg class="i"><use href="#timer" /></svg></span>
+                    <b>Maximized Vehicle Uptime</b>
+                    <p>Ultra-fast charging cuts downtime for commercial vehicles.</p>
+                </div>
+                <div class="ben">
+                    <span class="ico"><svg class="i"><use href="#shieldc" /></svg></span>
+                    <b>Enhanced Fleet Safety</b>
+                    <p>Automatic temperature monitoring minimizes operational risk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="psec">
+        <div class="container tech">
+            <div>
+                <span class="tag">Technology &amp; Safety</span>
+                <h2>Thermal Safety at the Atomic Level</h2>
+                <p class="lead" style="max-width:480px">A cell-to-cell thermal barrier isolates every cell, so heat cannot spread if one cell is damaged. This thermal runaway containment keeps a single fault from becoming a pack-level event, while the liquid cooling plate keeps the whole pack in its ideal temperature range.</p>
+            </div>
+            <div class="diagram">
+                <svg viewBox="0 0 560 300" role="img" aria-label="Cross-section of a VoltEdge battery pack showing cells, thermal barriers and liquid cooling">
+                    <defs>
+                        <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                            <rect width="3.5" height="7" fill="#b6f26b" />
+                        </pattern>
+                    </defs>
+                    <rect x="10" y="10" width="540" height="280" rx="24" fill="#eef5f1" stroke="#12352c" stroke-width="5" />
+                    <rect x="28" y="28" width="504" height="150" rx="14" fill="#fff" stroke="#c9d9d1" />
+                    <rect x="44" y="44" width="100" height="118" rx="16" fill="#2a8c5e" />
+                    <rect x="58" y="60" width="72" height="86" rx="10" fill="#1f6e49" />
+                    <text x="94" y="109" text-anchor="middle" fill="#fff" font-size="15" font-family="DM Sans,sans-serif">Cell 1</text>
+                    <rect x="166" y="44" width="100" height="118" rx="16" fill="#2a8c5e" />
+                    <rect x="180" y="60" width="72" height="86" rx="10" fill="#1f6e49" />
+                    <text x="216" y="109" text-anchor="middle" fill="#fff" font-size="15" font-family="DM Sans,sans-serif">Cell 2</text>
+                    <rect x="288" y="44" width="100" height="118" rx="16" fill="#2a8c5e" />
+                    <rect x="302" y="60" width="72" height="86" rx="10" fill="#1f6e49" />
+                    <text x="338" y="109" text-anchor="middle" fill="#fff" font-size="15" font-family="DM Sans,sans-serif">Cell 3</text>
+                    <rect x="410" y="44" width="100" height="118" rx="16" fill="#2a8c5e" />
+                    <rect x="424" y="60" width="72" height="86" rx="10" fill="#1f6e49" />
+                    <text x="460" y="109" text-anchor="middle" fill="#fff" font-size="15" font-family="DM Sans,sans-serif">Cell 4</text>
+                    <rect x="144" y="40" width="22" height="126" fill="url(#hatch)" stroke="#12352c" stroke-width="1" />
+                    <rect x="266" y="40" width="22" height="126" fill="url(#hatch)" stroke="#12352c" stroke-width="1" />
+                    <rect x="388" y="40" width="22" height="126" fill="url(#hatch)" stroke="#12352c" stroke-width="1" />
+                    <rect x="28" y="196" width="504" height="76" rx="14" fill="#dcecf6" stroke="#12352c" stroke-width="2" />
+                    <path class="wave" d="M44 234q15-20 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0" fill="none" stroke="#2b7bb0" stroke-width="4" stroke-linecap="round" />
+                </svg>
+                <div class="legend">
+                    <span><i style="background:#2a8c5e"></i>Battery cells</span>
+                    <span><i style="background:#b6f26b"></i>Thermal barrier</span>
+                    <span><i style="background:#dcecf6;border:1px solid #2b7bb0"></i>Liquid cooling plate</span>
+                    <span><i style="background:#12352c"></i>Aluminium enclosure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="psec alt">
+        <div class="container sus">
+            <div>
+                <span class="tag">Sustainability &amp; Lifecycle</span>
+                <h2>Built for a Sustainable Energy Future</h2>
+                <ul class="ck">
+                    <li><svg class="i"><use href="#check" /></svg><span>Ethical, verified mining of raw materials.</span></li>
+                    <li><svg class="i"><use href="#check" /></svg><span>Low-carbon manufacturing process.</span></li>
+                    <li><svg class="i"><use href="#check" /></svg><span><b>End-of-Life Program:</b> 95% of battery cell materials can be recycled.</span></li>
+                </ul>
+            </div>
+            <div class="stat95">
+                <div class="glass">
+                    <strong>95%</strong>
+                    <span>of cell materials recyclable<br>through our End-of-Life Program</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="psec">
+        <div class="container">
+            <div class="sec-h">
+                <span class="tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq">
+                <details name="faq" open>
+                    <summary>Can the VoltEdge Battery pack dimensions be customized for our chassis?</summary>
+                    <p>Yes, our modular Cell-to-Pack (CTP) architecture allows physical enclosure adjustments to meet specific automotive platform requirements.</p>
+                </details>
+                <details name="faq">
+                    <summary>How can we request the official engineering datasheet and CAD files?</summary>
+                    <p>You can request technical documentation by clicking the "Request Datasheet" button or contacting our technical sales team directly.</p>
+                </details>
+                <details name="faq">
+                    <summary>What warranty and cycle-life guarantees are offered?</summary>
+                    <p>Standard conceptual specifications target 3,000+ full cycles. Official warranty terms are defined during B2B supply contract agreements.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="cvis" style="--img:url(images/cta-bg.jpg)"></div>
+        <div class="container cg">
+            <div>
+                <h2>Need Custom Battery<br><span class="g">Specifications</span> for Your Vehicles?</h2>
+                <p>Our team is ready to discuss your platform requirements, integration timelines, and supply chain needs.</p>
+                <a class="btn lime" href="index.html#contact" data-purpose="Get a quote">Contact Sales <svg class="i"><use href="#arr" /></svg></a>
+                <p class="resp"><svg class="i"><use href="#clock" /></svg>Direct response within 24 business hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="fg">
+                <div class="fb">
+                    <a class="logo" href="index.html"><img src="images/logo-light.png" alt="VoltEdge – Clean Energy. Better Tomorrows."></a>
+                    <p>High-density battery solutions engineered for a cleaner, more efficient electric future.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#why">Why Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:business@voltedge-energy.com">business@voltedge-energy.com</a></li>
+                        <li>+62 812 3456 7890</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <a class="soc" href="#" aria-label="LinkedIn"><svg class="i ci"><use href="#linkedin" /></svg></a>
+                    <a class="soc" href="#" aria-label="Instagram"><svg class="i ci"><use href="#instagram" /></svg></a>
+                    <a class="soc" href="#" aria-label="YouTube"><svg class="i ci"><use href="#youtube" /></svg></a>
+                </div>
+            </div>
+            <div class="copy">
+                <span>© 2026 VoltEdge Energy. All rights reserved.</span>
+                <span>Privacy Policy &nbsp;|&nbsp; Terms &amp; Conditions</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
